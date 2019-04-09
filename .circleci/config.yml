@@ -66,6 +66,10 @@ jobs:
             - vendor/bundle
 
       - run:
+          name: Create Google Play key
+          command: echo $GOOGLE_PLAY_KEY > fastlane/google-play-key.json
+
+      - run:
           name: fastlane tests
           command: |
             mkdir -p test-results/fastlane
