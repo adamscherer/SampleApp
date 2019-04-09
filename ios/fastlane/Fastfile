@@ -22,7 +22,7 @@ platform :ios do
   desc "This will also make sure the profile is up to date"
   lane :beta do
     match(type: "development")
-    gym # Build your app - more options available
+    gym(scheme: "SampleApp") # Build your app - more options available
     pilot
 
     # sh "your_script.sh"
@@ -33,7 +33,7 @@ platform :ios do
   lane :release do
     match(type: "adhoc")
     # snapshot
-    gym # Build your app - more options available
+    gym(scheme: "SampleApp") # Build your app - more options available
     deliver(force: true)
     # frameit
   end
