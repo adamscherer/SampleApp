@@ -96,6 +96,12 @@ jobs:
           name: set Ruby version
           command:  echo "ruby-2.4" > ~/.ruby-version
 
+      - run:
+          name: "Install React Native dependencies"
+          command: |
+            brew update
+            brew install watchman
+
       - restore_cache:
           key: yarn-v1-{{ checksum "yarn.lock" }}-{{ arch }}
 
