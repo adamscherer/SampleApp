@@ -15,7 +15,7 @@ platform :ios do
 
   desc "Runs all the tests"
   lane :test do
-    scan
+    scan(scheme: "SampleApp")
   end
 
   desc "Submit a new Beta Build to Apple TestFlight"
