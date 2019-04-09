@@ -4,6 +4,10 @@ import DrawerButton from "../../App/Components/DrawerButton";
 import { shallow } from "enzyme";
 import renderer from "react-test-renderer";
 
+test("empty", () => {
+  expect(null).toBeNull();
+});
+
 // test('DrawerButton component renders correctly', () => {
 //   const tree = renderer.create(<DrawerButton onPress={() => {}} text='hi' />).toJSON()
 //   expect(tree).toMatchSnapshot()

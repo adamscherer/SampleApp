@@ -4,6 +4,10 @@ import RoundedButton from "../../App/Components/RoundedButton";
 import { shallow } from "enzyme";
 import renderer from "react-test-renderer";
 
+test("empty", () => {
+  expect(null).toBeNull();
+});
+
 // test('RoundedButton component renders correctly', () => {
 //   const tree = renderer.create(<RoundedButton onPress={() => {}} text='howdy' />).toJSON()
 //   expect(tree).toMatchSnapshot()

@@ -3,6 +3,10 @@ import React from "react";
 import AlertMessage from "../../App/Components/AlertMessage";
 import renderer from "react-test-renderer";
 
+test("empty", () => {
+  expect(null).toBeNull();
+});
+
 // test('AlertMessage component renders correctly if show is true', () => {
 //   const tree = renderer.create(<AlertMessage title='howdy' />).toJSON()
 //   expect(tree).toMatchSnapshot()

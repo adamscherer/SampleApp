@@ -4,6 +4,10 @@ import FullButton from "../../App/Components/FullButton";
 import { shallow } from "enzyme";
 import renderer from "react-test-renderer";
 
+test("empty", () => {
+  expect(null).toBeNull();
+});
+
 // test('FullButton component renders correctly', () => {
 //   const tree = renderer.create(<FullButton onPress={() => {}} text='hi' />).toJSON()
 //   expect(tree).toMatchSnapshot()
