@@ -81,6 +81,10 @@ jobs:
       - store_artifacts:
           path: test-results
 
+      - run:
+          name: deploy a version to play
+          command: bundle exec fastlane beta
+
   ios:
     macos:
       xcode: 10.1.0
@@ -162,6 +166,9 @@ workflows:
   node-android-ios:
     jobs:
       - node
+      - android:
+          requires:
+            - node
       - ios:
           requires:
             - node
