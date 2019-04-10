@@ -1475,7 +1475,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = artisan.SampleApp;
 				PRODUCT_NAME = SampleApp;
-				PROVISIONING_PROFILE_SPECIFIER = "match AdHoc artisan.SampleApp";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore artisan.SampleApp";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
